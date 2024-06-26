@@ -1,14 +1,17 @@
 import React from 'react'
+import Section from './Section'
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-blue-600 text-white text-center py-20">
-      <h1 className="text-5xl font-bold mb-4">Bem-vindo ao meu site!</h1>
+    <Section
+      title="Bem-vindo ao meu site!"
+      className="bg-blue-600 text-white text-center"
+    >
       <p className="text-xl">
         Eu sou Reginaldo Gomes, desenvolvedor front-end especializado em
-        tecnologias modernas.
+        tecnologias modernas. teste233
       </p>
-    </section>
+    </Section>
   )
 }
 

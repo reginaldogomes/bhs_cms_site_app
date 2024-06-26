@@ -1,4 +1,5 @@
 // src/app/layout.tsx
+import './globals.css'
 import React, { ReactNode } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -15,7 +16,7 @@ export default function Layout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Meu Blog</title>
       </head>
-      <body>
+      <body className="bg-primary-500">
         <Header />
         <main>{children}</main>
         <Footer />

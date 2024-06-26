@@ -25,19 +25,14 @@
       "@/*": [
         "./src/*"
       ],
-      "@modules/*": [
-        "./src/modules/*"
-      ],
-      "@blog/*": [
-        "./src/modules/blog/*"
-      ]
     }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "tailwind.config.js"
   ],
   "exclude": [
     "node_modules"

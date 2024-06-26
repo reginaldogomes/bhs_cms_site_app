@@ -9,7 +9,6 @@ RUN npm install
 
 COPY prisma ./prisma
 
-
 RUN npx prisma generate
 
 COPY . .
@@ -25,4 +24,4 @@ COPY --from=build /usr/src/app .
 
 EXPOSE 3000
 
-CMD ["npm", "nodemon", "run", "dev"]
+CMD ["npm", "run", "dev"]
