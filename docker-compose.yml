@@ -16,11 +16,10 @@ services:
   app:
     build: .
     volumes:
-      - .:/app # Monta o diretório do projeto como volume
-      - /app/node_modules # Evita que os node_modules locais sobrescrevam os do contêiner
+      - .:/postgres-data # Monta o diretório do projeto como volume
+      - /usr/src/app/node_modules # Evita que os node_modules locais sobrescrevam os do contêiner
     ports:
       - 3000:3000
-    command: npx nodemon src/pages/_app.js
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/mydb
     depends_on:
