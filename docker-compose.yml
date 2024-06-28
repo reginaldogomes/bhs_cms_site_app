@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: mydb
     volumes:
-      - postgres-data:/data/db
+      - postgres-data:/var/lib/postgresql/data
     ports:
       - 5432:5432
     networks:
@@ -16,7 +16,7 @@ services:
   app:
     build: .
     volumes:
-      - .:/postgres-data # Monta o diretório do projeto como volume
+      - .:/usr/src/app # Monta o diretório do projeto como volume
       - /usr/src/app/node_modules # Evita que os node_modules locais sobrescrevam os do contêiner
     ports:
       - 3000:3000

@@ -1,10 +1,10 @@
 // src/components/Footer.tsx
-import React from 'react'
-
 export default function Footer() {
   return (
-    <footer>
-      <p>&copy; 2022 Meu Blog</p>
+    <footer className="w-full bg-secondary-500">
+      <div className="flex max-w-1280 mx-auto">
+        <p>&copy; 2022 Meu Blog</p>
+      </div>
     </footer>
   )
 }
