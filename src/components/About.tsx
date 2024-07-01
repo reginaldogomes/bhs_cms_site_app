@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from './Section'
+import Section from '@/components/layouts/Section'
 
 const About: React.FC = () => {
   return (
