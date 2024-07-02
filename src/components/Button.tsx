@@ -1,8 +1,34 @@
-// src/components/Button.tsx
-import React, { ButtonHTMLAttributes } from 'react'
+type ButtonVariant = 'primary' | 'secondary' | 'success' | 'danger'
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
-
-export default function Button({ children, ...props }: ButtonProps) {
-  return <button {...props}>{children}</button>
+type ButtonProps = {
+  label: string
+  onClick: () => void
+  variant?: ButtonVariant
 }
+
+const buttonStyles: { [key in ButtonVariant]: string } = {
+  primary:
+    'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded',
+  secondary:
+    'bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded',
+  success:
+    'bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded',
+  danger: 'bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded',
+}
+
+const ButtonComponent: React.FC<ButtonProps> = ({
+  label,
+  onClick,
+  variant = 'primary',
+}) => {
+  return (
+    <button
+      className={`${buttonStyles[variant]} focus:outline-none`}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  )
+}
+
+export default ButtonComponent

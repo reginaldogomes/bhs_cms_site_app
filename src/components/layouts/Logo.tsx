@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
-const logo = '/reginaldo_gomes.svg'
+const logo = '/logo_reginaldo_gomes.svg'
 
 export const Logo = () => {
   return (
     <Image
       src={logo}
-      alt="Descrição da imagem"
-      width={240} // Largura da imagem
-      height={10} // Altura da imagem
+      alt="Reginaldo Gomes - Tecnologia e Inovação"
+      width={300} // Largura da imagem
+      height={30} // Altura da imagem
     />
   )
 }

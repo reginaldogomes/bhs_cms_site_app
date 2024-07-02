@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '@/components/layouts/Section'
+import ButtonComponent from './Button'
 
 const dataResume = {
   name: 'reginaldo',
@@ -8,6 +9,9 @@ const dataResume = {
 }
 
 const Hero: React.FC = () => {
+  const handleClick = () => {
+    alert('Botão clicado!')
+  }
   return (
     <Section
       title="Bem-vindo ao meu site!"
@@ -18,6 +22,11 @@ const Hero: React.FC = () => {
       </h1>
 
       <p className="text-xl">{dataResume.bio}</p>
+      <ButtonComponent
+        label="Primário"
+        onClick={handleClick}
+        variant="primary"
+      />
     </Section>
   )
 }
