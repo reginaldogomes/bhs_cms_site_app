@@ -1,3 +1,7 @@
+import { FaLinkedin } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+
 // Tipos para os itens de redes sociais e o objeto de links
 type SocialMedia = {
   name: string
@@ -13,24 +17,19 @@ type SocialMediaLinks = {
 const socialMediaLinks: SocialMediaLinks = {
   items: [
     {
-      name: 'Facebook',
-      link: 'https://www.facebook.com',
-      icon: <i className="fab fa-facebook"></i>,
-    },
-    {
       name: 'Twitter',
       link: 'https://www.twitter.com',
-      icon: <i className="fab fa-twitter"></i>,
+      icon: <FaGithub />,
     },
     {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com',
-      icon: <i className="fab fa-linkedin"></i>,
+      icon: <FaInstagram />,
     },
     {
       name: 'Instagram',
-      link: 'https://www.instagram.com',
-      icon: <i className="fab fa-instagram"></i>,
+      link: 'https://www.instagram.com/__reginaldogomes_',
+      icon: <FaLinkedin />,
     },
   ],
 }

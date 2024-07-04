@@ -6,9 +6,9 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-accent-500">
-      <div className="flex max-w-1280 mx-auto">
+      <div className="flex flex-col gap-4 max-w-1280 mx-auto text-center">
         <SocialMediaComponent />
-        <p>&copy; {currentYear}</p>
+        <p className="text-center">&copy; {currentYear}</p>
       </div>
     </footer>
   )
