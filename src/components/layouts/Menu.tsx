@@ -34,10 +34,10 @@ const ResponsiveMenu: React.FC = () => {
           </div>
           <button
             onClick={toggleMenu}
-            className="text-white sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-500"
+            className="text-white sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-500 z-10"
           >
             {isOpen ? (
-              <AiOutlineClose size={24} />
+              <AiOutlineClose size={48} />
             ) : (
               <AiOutlineMenu size={24} />
             )}
@@ -46,7 +46,7 @@ const ResponsiveMenu: React.FC = () => {
       </nav>
 
       {isOpen && (
-        <div className="sm:hidden fixed inset-0 bg-accent-500 bg-opacity-95 flex flex-col items-center justify-center transition-opacity duration-500 -z-10">
+        <div className="sm:hidden fixed inset-0 bg-accent-500 bg-opacity-95 flex flex-col items-center justify-center transition-opacity duration-500 -z-9">
           <ul className="space-y-6">
             {menuItems.map((item) => (
               <li key={item.href}>
