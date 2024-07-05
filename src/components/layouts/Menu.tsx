@@ -18,7 +18,7 @@ const ResponsiveMenu: React.FC = () => {
   }
 
   return (
-    <div>
+    <>
       <nav className="bg-gray-800 p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="hidden sm:flex space-x-4">
@@ -46,25 +46,23 @@ const ResponsiveMenu: React.FC = () => {
       </nav>
 
       {isOpen && (
-        <div className="sm:hidden absolute top-0 left-0 w-full h-screen bg-gray-800 flex flex-col items-center justify-center transition-opacity duration-500">
-          <nav>
-            <ul className="space-y-6">
-              {menuItems.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-2xl text-white hover:text-gray-300"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+        <div className="sm:hidden fixed inset-0 bg-gray-800 bg-opacity-95 flex flex-col items-center justify-center transition-opacity duration-500 z-50">
+          <ul className="space-y-6">
+            {menuItems.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl text-white hover:text-gray-300"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
-    </div>
+    </>
   )
 }
 
