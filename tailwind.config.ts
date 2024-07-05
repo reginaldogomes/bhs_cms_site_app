@@ -8,13 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/bg.jpg')",
+      },
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+      },
       maxWidth: {
         '1280': '1280px',
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
     colors: {

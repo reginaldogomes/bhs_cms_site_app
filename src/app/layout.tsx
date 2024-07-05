@@ -5,6 +5,7 @@ import Header from '@/components/layouts/Header'
 import Footer from '@/components/layouts/Footer'
 
 type LayoutProps = {
+  subsets: ['latin']
   children: ReactNode
 }
 
@@ -16,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Meu Blog</title>
       </head>
-      <body className="bg-primary-500 text-primary-100">
+      <body className="bg-primary-500 text-primary-100 font-nunito">
         <Header />
         <main>{children}</main>
         <Footer />

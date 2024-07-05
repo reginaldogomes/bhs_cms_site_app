@@ -15,6 +15,8 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <section id={id} className={`py-20 ${className}`}>
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-4">{title}</h2>
         {children}

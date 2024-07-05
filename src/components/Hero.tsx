@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
   return (
     <Section
       title="Bem-vindo ao meu site!"
-      className="bg-blue-600 text-white text-center"
+      className="bg-secondary-500/[.01] text-white text-center bg-[url('/bg.jpg')] bg-no-repeat bg-cover bg-opacity-0"
     >
       <h1>
         {dataResume.name} - {dataResume.slogan}
