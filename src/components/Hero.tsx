@@ -15,18 +15,20 @@ const Hero: React.FC = () => {
   return (
     <Section
       title="Bem-vindo ao meu site!"
-      className="bg-secondary-500/[.01] text-white text-center bg-[url('/bg.jpg')] bg-no-repeat bg-cover bg-opacity-0"
+      className="bg-secondary-500 text-white text-center bg-[url('/bg.jpg')] bg-no-repeat bg-cover bg-opacity-0 backdrop-opacity-0"
     >
-      <h1>
-        {dataResume.name} - {dataResume.slogan}
-      </h1>
+      <div className="bg-secondary-500 opacity-100 h-full">
+        <h1>
+          {dataResume.name} - {dataResume.slogan}
+        </h1>
 
-      <p className="text-xl">{dataResume.bio}</p>
-      <ButtonComponent
-        label="Primário"
-        onClick={handleClick}
-        variant="primary"
-      />
+        <p className="text-xl">{dataResume.bio}</p>
+        <ButtonComponent
+          label="Primário"
+          onClick={handleClick}
+          variant="primary"
+        />
+      </div>
     </Section>
   )
 }

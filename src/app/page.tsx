@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <>
       <Hero></Hero>
-      <Skills></Skills>
       <ServiceSection />
+      <Skills></Skills>
     </>
   )
 }

@@ -5,17 +5,16 @@ import Header from '@/components/layouts/Header'
 import Footer from '@/components/layouts/Footer'
 
 type LayoutProps = {
-  subsets: ['latin']
   children: ReactNode
 }
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Meu Blog</title>
+        <title>{process.env.TITLE_SITE}</title>
       </head>
       <body className="bg-primary-500 text-primary-100 font-nunito">
         <Header />
