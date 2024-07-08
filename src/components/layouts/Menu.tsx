@@ -46,7 +46,7 @@ const ResponsiveMenu: React.FC = () => {
       </nav>
 
       {isOpen && (
-        <div className="sm:hidden fixed inset-0 bg-accent-500 bg-opacity-95 flex flex-col items-center justify-center transition-opacity duration-500 -z-9">
+        <div className="sm:hidden fixed inset-0 bg-accent-500 bg-opacity-95 flex flex-col items-center justify-center transition-opacity duration-500 -z-9 translate-y-px">
           <ul className="space-y-6">
             {menuItems.map((item) => (
               <li key={item.href}>

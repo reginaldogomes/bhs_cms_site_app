@@ -1,4 +1,4 @@
-import { useForm, FormProvider } from 'react-hook-form'
+import { useForm, FormProvider, SubmitHandler } from 'react-hook-form'
 import InputField from '@/components/form/InputField'
 import TextareaField from '@/components/form/TextareaField'
 
@@ -11,7 +11,7 @@ interface ContactFormValues {
 const ContactForm: React.FC = () => {
   const methods = useForm<ContactFormValues>()
 
-  const onSubmit = (data: ContactFormValues) => {
+  const onSubmit: SubmitHandler<ContactFormValues> = (data) => {
     alert(JSON.stringify(data))
   }
 
