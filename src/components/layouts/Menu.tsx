@@ -54,7 +54,7 @@ const ResponsiveMenu: React.FC = () => {
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl text-white hover:text-gray-300"
+                  className="text-4xl text-white hover:text-gray-300"
                 >
                   {item.name}
                 </Link>
