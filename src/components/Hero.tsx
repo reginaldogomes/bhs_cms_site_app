@@ -15,13 +15,14 @@ const Hero: React.FC = () => {
   return (
     <Section
       title="Bem-vindo ao meu site!"
-      className="bg-secondary-500 text-white text-center"
+      className="bg-primary-600 text-white text-center"
     >
       <h1>
         {dataResume.name} - {dataResume.slogan}
       </h1>
 
       <p className="text-xl">{dataResume.bio}</p>
+
       <ButtonComponent
         label="Primário"
         onClick={handleClick}
