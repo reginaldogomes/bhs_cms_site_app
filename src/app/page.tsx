@@ -8,9 +8,9 @@ import ServiceSection from '@/components/services/ServiceSection'
 export default function HomePage() {
   return (
     <>
-      <Hero></Hero>
+      <Hero />
       <ServiceSection />
-      <Skills></Skills>
+      <Skills />
     </>
   )
 }

@@ -7,7 +7,7 @@ type ButtonProps = {
 }
 
 const buttonStyles: { [key in ButtonVariant]: string } = {
-  primary: 'bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded',
+  primary: 'bg-ascend hover:bg-blue-700 text-white font-bold py-2 px-4 rounded',
   secondary:
     'bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded',
   success:

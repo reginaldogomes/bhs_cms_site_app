@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
   return (
     <Section
       title="Bem-vindo ao meu site!"
-      className="bg-primary-600 text-white text-center"
+      className="bg-primary-600 text-white text-center max-w-1280 mx-auto"
     >
       <h1>
         {dataResume.name} - {dataResume.slogan}
