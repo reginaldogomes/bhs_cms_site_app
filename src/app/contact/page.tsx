@@ -1,4 +1,4 @@
-// src/pages/index.tsx
+'use client'
 
 import ContactForm from '@/components/form/ContactForm'
 
