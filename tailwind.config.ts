@@ -15,7 +15,7 @@ const config: Config = {
         },
       },
       animation: {
-        slideUp: 'slideUp 0.5s ease-out',
+        slideUp: 'slideUp 0.2s ease-out',
       },
       backgroundImage: {
         'hero-pattern': "url('/bg.jpg')",
