@@ -8,7 +8,9 @@ export default function Footer() {
     <footer className="w-full bg-accent-500">
       <div className="flex flex-col gap-4 max-w-1280 mx-auto text-center py-16">
         <SocialMediaComponent />
-        <p className="text-center">&copy; {currentYear}</p>
+        <p className="text-center">
+          &copy; {currentYear} - Reginaldo Gomes. Todos os direitos reservados
+        </p>
       </div>
     </footer>
   )
