@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import SocialMedia from '../SocialMedia'
 
@@ -27,7 +28,7 @@ const ResponsiveMenu: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-white hover:text-gray-300"
+                className={`text-white hover:text-gray-300 ${router.pathname === item.href ? 'text-gray-300' : ''}`}
               >
                 {item.name}
               </Link>

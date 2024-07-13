@@ -5,7 +5,7 @@ import Menu from './Menu'
 export default function Header() {
   return (
     <header className="w-full">
-      <div className="flex justify-between items-center max-w-1280 mx-auto py-8 bg-fixed">
+      <div className="flex justify-between items-center max-w-1280 mx-auto py-8 bg-fixed sticky">
         <Logo />
         <Menu />
       </div>
