@@ -14,6 +14,7 @@ const menuItems = [
 
 const ResponsiveMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter() // Certifique-se de usar o hook useRouter
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -28,7 +29,7 @@ const ResponsiveMenu: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-white hover:text-gray-300 ${router.pathname === item.href ? 'text-gray-300' : ''}`}
+                className={`text-4xl text-white hover:text-gray-300 ${router.pathname === item.href ? 'text-yellow-500' : ''}`}
               >
                 {item.name}
               </Link>
