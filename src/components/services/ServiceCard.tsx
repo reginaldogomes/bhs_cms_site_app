@@ -1,6 +1,3 @@
-// components/ServiceCard.tsx
-import React from 'react'
-
 interface Service {
   title: string
   description: string

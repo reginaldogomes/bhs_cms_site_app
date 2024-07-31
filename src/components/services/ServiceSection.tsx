@@ -1,5 +1,4 @@
 // components/ServiceSection.tsx
-import React from 'react'
 import ServiceCard from './ServiceCard'
 import { FaCloud, FaLightbulb, FaCog } from 'react-icons/fa'
 

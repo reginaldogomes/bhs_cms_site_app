@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import SocialMedia from '../SocialMedia'
 
@@ -14,7 +13,6 @@ const menuItems = [
 
 const ResponsiveMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const router = useRouter() // Certifique-se de usar o hook useRouter
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -29,7 +27,7 @@ const ResponsiveMenu: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-4xl text-white hover:text-gray-300 ${router.pathname === item.href ? 'text-yellow-500' : ''}`}
+                className={`text-4xl text-white hover:text-gray-300`}
               >
                 {item.name}
               </Link>
