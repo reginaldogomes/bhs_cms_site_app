@@ -13,13 +13,14 @@ export const Logo = () => {
           alt="Reginaldo Gomes - Tecnologia e Inovação"
           width={300} // Largura da imagem
           height={30} // Altura da imagem
-          className="sm:hidden"
+          className="hidden md:block"
         />
         <Image
           src={logoIcon}
           alt="Reginaldo Gomes - Tecnologia e Inovação"
-          width={143} // Largura da imagem
-          height={143} // Altura da imagem
+          width={73} // Largura da imagem
+          height={73} // Altura da imagem
+          className="block md:hidden"
         />
       </Link>
     </>
