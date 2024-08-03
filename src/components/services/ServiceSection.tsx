@@ -1,6 +1,6 @@
 // components/ServiceSection.tsx
 import ServiceCard from './ServiceCard'
-import { FaCloud, FaLightbulb, FaCog } from 'react-icons/fa'
+import { FaCloud, FaCog } from 'react-icons/fa'
 
 const services = [
   {
@@ -10,13 +10,7 @@ const services = [
     icon: <FaCloud className="h-8 w-8 text-blue-500" />,
   },
   {
-    title: 'Transformação Digital',
-    description:
-      'Implementamos estratégias digitais para otimizar seus processos de negócios.',
-    icon: <FaLightbulb className="h-8 w-8 text-blue-500" />,
-  },
-  {
-    title: 'Gestão de Infraestrutura',
+    title: 'Desenvolvimento Web',
     description:
       'Oferecemos soluções de gestão de infraestrutura para garantir alta disponibilidade e performance.',
     icon: <FaCog className="h-8 w-8 text-blue-500" />,
