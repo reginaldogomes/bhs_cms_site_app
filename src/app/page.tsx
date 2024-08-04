@@ -1,6 +1,5 @@
 'use client'
 import Hero from '@/components/Hero'
-import Skills from '@/components/Skills'
 import ServiceSection from '@/components/services/ServiceSection'
 
 export default function HomePage() {
@@ -8,7 +7,6 @@ export default function HomePage() {
     <>
       <Hero />
       <ServiceSection />
-      <Skills />
     </>
   )
 }

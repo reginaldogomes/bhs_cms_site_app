@@ -9,6 +9,7 @@ const menuItems = [
   { name: 'Sobre', href: '/about' },
   { name: 'Serviços', href: '/services' },
   { name: 'Contato', href: '/contact' },
+  { name: 'Artigos', href: '/articles' },
 ]
 
 const ResponsiveMenu: React.FC = () => {
