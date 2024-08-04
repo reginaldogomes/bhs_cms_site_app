@@ -46,7 +46,7 @@ const SocialMediaComponent: React.FC = () => {
           className="text-gray-700 hover:text-gray-900"
         >
           {item.icon}
-          <span className="sr-only">{item.name}</span>
+          <span className="sr-only text-4xl">{item.name}</span>
         </a>
       ))}
     </div>
