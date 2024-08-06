@@ -1,6 +1,6 @@
-import { useForm, FormProvider, SubmitHandler } from 'react-hook-form'
-import InputField from '@/components/form/InputField'
-import TextareaField from '@/components/form/TextareaField'
+import { useForm, FormProvider, SubmitHandler } from "react-hook-form"
+import InputField from "@/components/form/InputField"
+import TextareaField from "@/components/form/TextareaField"
 
 interface ContactFormValues {
   name: string
@@ -19,7 +19,7 @@ const ContactForm: React.FC = () => {
     <FormProvider {...methods}>
       <form
         onSubmit={methods.handleSubmit(onSubmit)}
-        className="w-full max-w-lg mx-auto mt-8 bg-white p-8 rounded-lg shadow-md"
+        className="bg-white mx-auto mt-8 w-full max-w-lg rounded-lg p-8 shadow-md"
       >
         <InputField name="name" label="Name" required />
         <InputField name="email" label="Email" type="email" required />
@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="bg-accent-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="hover:bg-blue-700 text-white focus:shadow-outline rounded bg-accent-500 px-4 py-2 font-bold focus:outline-none"
           >
             Submit
           </button>

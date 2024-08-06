@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: [import('prettier-plugin-tailwindcss')],
   semi: false,
   trailingComma: 'all',
   singleQuote: false,  // Use aspas duplas

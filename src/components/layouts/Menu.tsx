@@ -1,15 +1,15 @@
-'use client'
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import SocialMedia from '../SocialMedia'
+"use client"
+import React, { useState } from "react"
+import Link from "next/link"
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
+import SocialMedia from "../SocialMedia"
 
 const menuItems = [
-  { name: 'Início', href: '/' },
-  { name: 'Sobre', href: '/about' },
-  { name: 'Serviços', href: '/services' },
-  { name: 'Contato', href: '/contact' },
-  { name: 'Artigos', href: '/articles' },
+  { name: "Início", href: "/" },
+  { name: "Sobre", href: "/about" },
+  { name: "Serviços", href: "/services" },
+  { name: "Contato", href: "/contact" },
+  { name: "Artigos", href: "/articles" },
 ]
 
 const ResponsiveMenu: React.FC = () => {
@@ -22,13 +22,13 @@ const ResponsiveMenu: React.FC = () => {
   return (
     <>
       <nav className="bg-gray-800 p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="hidden sm:flex space-x-4">
+        <div className="container mx-auto flex items-center justify-between">
+          <div className="hidden space-x-4 sm:flex">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-2xl text-white hover:text-gray-300`}
+                className={`text-white hover:text-gray-300 text-2xl`}
               >
                 {item.name}
               </Link>
@@ -36,7 +36,7 @@ const ResponsiveMenu: React.FC = () => {
           </div>
           <button
             onClick={toggleMenu}
-            className="text-white sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-500 z-10"
+            className="text-white focus:ring-gray-500 z-10 focus:outline-none focus:ring-2 sm:hidden"
           >
             {isOpen ? (
               <AiOutlineClose size={48} />
@@ -48,14 +48,14 @@ const ResponsiveMenu: React.FC = () => {
       </nav>
 
       {isOpen && (
-        <div className="sm:hidden fixed inset-0 bg-accent-500 bg-opacity-98 flex flex-col items-center justify-center -z-9 animate-slideUp">
+        <div className="bg-opacity-98 -z-9 fixed inset-0 flex animate-slideUp flex-col items-center justify-center bg-accent-500 sm:hidden">
           <ul className="space-y-6">
             {menuItems.map((item) => (
               <li key={item.href} className="text-center">
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-3xl text-white hover:text-gray-300"
+                  className="text-white hover:text-gray-300 text-3xl"
                 >
                   {item.name}
                 </Link>

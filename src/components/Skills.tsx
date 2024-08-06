@@ -1,4 +1,4 @@
-import Section from '@/components/layouts/Section'
+import Section from "@/components/layouts/Section"
 
 type SkillCategory = {
   frameworks: string[]
@@ -16,26 +16,26 @@ type Skills = {
 
 const skills: Skills = {
   javascript: {
-    frameworks: ['React', 'Next.js', 'Node.js', 'Express'],
-    tools: ['npm', 'yarn', 'Webpack', 'Babel'],
-    testing: ['Jest', 'Mocha', 'Chai'],
-    languages: ['TypeScript', 'JavaScript (ES6+)'],
-    libraries: ['Redux', 'Tailwind CSS', 'Bootstrap'],
+    frameworks: ["React", "Next.js", "Node.js", "Express"],
+    tools: ["npm", "yarn", "Webpack", "Babel"],
+    testing: ["Jest", "Mocha", "Chai"],
+    languages: ["TypeScript", "JavaScript (ES6+)"],
+    libraries: ["Redux", "Tailwind CSS", "Bootstrap"],
   },
   frontend: {
-    languages: ['HTML', 'CSS', 'JavaScript'],
-    frameworks: ['React', 'Next.js', 'Vue.js'],
-    libraries: ['Redux', 'Tailwind CSS', 'Bootstrap'],
-    tools: ['Webpack', 'Babel', 'ESLint'],
-    testing: ['Jest', 'React Testing Library', 'Cypress'],
+    languages: ["HTML", "CSS", "JavaScript"],
+    frameworks: ["React", "Next.js", "Vue.js"],
+    libraries: ["Redux", "Tailwind CSS", "Bootstrap"],
+    tools: ["Webpack", "Babel", "ESLint"],
+    testing: ["Jest", "React Testing Library", "Cypress"],
   },
   backend: {
-    languages: ['Node.js', 'Python', 'Java'],
-    frameworks: ['Express', 'Django', 'Spring'],
-    databases: ['MongoDB', 'PostgreSQL', 'MySQL'],
-    tools: ['Docker', 'Kubernetes', 'Jenkins'],
-    testing: ['Mocha', 'Chai', 'Supertest'],
-    libraries: ['Redux', 'Tailwind CSS', 'Bootstrap'],
+    languages: ["Node.js", "Python", "Java"],
+    frameworks: ["Express", "Django", "Spring"],
+    databases: ["MongoDB", "PostgreSQL", "MySQL"],
+    tools: ["Docker", "Kubernetes", "Jenkins"],
+    testing: ["Mocha", "Chai", "Supertest"],
+    libraries: ["Redux", "Tailwind CSS", "Bootstrap"],
   },
 }
 
@@ -45,62 +45,62 @@ const Skills: React.FC = () => {
       title="Bem-vindo ao meu site!"
       className="bg-blue-600 text-white text-center"
     >
-      <h1 className="text-3xl font-bold mb-6">Habilidades</h1>
+      <h1 className="mb-6 text-3xl font-bold">Habilidades</h1>
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold mb-2">JavaScript</h2>
-        <ul className="list-disc list-inside ml-4">
+        <h2 className="mb-2 text-2xl font-semibold">JavaScript</h2>
+        <ul className="ml-4 list-inside list-disc">
           <li>
-            <strong>Frameworks:</strong>{' '}
-            {skills.javascript.frameworks.join(', ')}
+            <strong>Frameworks:</strong>{" "}
+            {skills.javascript.frameworks.join(", ")}
           </li>
           <li>
-            <strong>Tools:</strong> {skills.javascript.tools.join(', ')}
+            <strong>Tools:</strong> {skills.javascript.tools.join(", ")}
           </li>
           <li>
-            <strong>Testing:</strong> {skills.javascript.testing.join(', ')}
+            <strong>Testing:</strong> {skills.javascript.testing.join(", ")}
           </li>
           <li>
-            <strong>Languages:</strong> {skills.javascript.languages.join(', ')}
+            <strong>Languages:</strong> {skills.javascript.languages.join(", ")}
           </li>
         </ul>
       </div>
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold mb-2">Front-end</h2>
-        <ul className="list-disc list-inside ml-4">
+        <h2 className="mb-2 text-2xl font-semibold">Front-end</h2>
+        <ul className="ml-4 list-inside list-disc">
           <li>
-            <strong>Languages:</strong> {skills.frontend.languages.join(', ')}
+            <strong>Languages:</strong> {skills.frontend.languages.join(", ")}
           </li>
           <li>
-            <strong>Frameworks:</strong> {skills.frontend.frameworks.join(', ')}
+            <strong>Frameworks:</strong> {skills.frontend.frameworks.join(", ")}
           </li>
           <li>
-            <strong>Libraries:</strong> {skills.frontend.libraries.join(', ')}
+            <strong>Libraries:</strong> {skills.frontend.libraries.join(", ")}
           </li>
           <li>
-            <strong>Tools:</strong> {skills.frontend.tools.join(', ')}
+            <strong>Tools:</strong> {skills.frontend.tools.join(", ")}
           </li>
           <li>
-            <strong>Testing:</strong> {skills.frontend.testing.join(', ')}
+            <strong>Testing:</strong> {skills.frontend.testing.join(", ")}
           </li>
         </ul>
       </div>
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold mb-2">Back-end</h2>
-        <ul className="list-disc list-inside ml-4">
+        <h2 className="mb-2 text-2xl font-semibold">Back-end</h2>
+        <ul className="ml-4 list-inside list-disc">
           <li>
-            <strong>Languages:</strong> {skills.backend.languages.join(', ')}
+            <strong>Languages:</strong> {skills.backend.languages.join(", ")}
           </li>
           <li>
-            <strong>Frameworks:</strong> {skills.backend.frameworks.join(', ')}
+            <strong>Frameworks:</strong> {skills.backend.frameworks.join(", ")}
           </li>
           <li>
-            <strong>Databases:</strong> {skills.backend.databases.join(', ')}
+            <strong>Databases:</strong> {skills.backend.databases.join(", ")}
           </li>
           <li>
-            <strong>Tools:</strong> {skills.backend.tools.join(', ')}
+            <strong>Tools:</strong> {skills.backend.tools.join(", ")}
           </li>
           <li>
-            <strong>Testing:</strong> {skills.backend.testing.join(', ')}
+            <strong>Testing:</strong> {skills.backend.testing.join(", ")}
           </li>
         </ul>
       </div>

@@ -1,100 +1,100 @@
 {
-    "services": [
-        {
-            "name": "Desenvolvimento de Websites",
-            "description": [
-                "Cria\u00e7\u00e3o de websites personalizados.",
-                "Desenvolvimento de sites responsivos e mobile-friendly.",
-                "Manuten\u00e7\u00e3o e atualiza\u00e7\u00e3o de websites existentes."
-            ]
-        },
-        {
-            "name": "Desenvolvimento de E-commerce",
-            "description": [
-                "Cria\u00e7\u00e3o de lojas online.",
-                "Integra\u00e7\u00e3o com sistemas de pagamento.",
-                "Desenvolvimento de funcionalidades customizadas para e-commerce."
-            ]
-        },
-        {
-            "name": "Desenvolvimento de Aplica\u00e7\u00f5es Web",
-            "description": [
-                "Cria\u00e7\u00e3o de aplica\u00e7\u00f5es web sob medida.",
-                "Desenvolvimento de dashboards e sistemas de gest\u00e3o.",
-                "Implementa\u00e7\u00e3o de APIs e servi\u00e7os web."
-            ]
-        },
-        {
-            "name": "Desenvolvimento de Aplica\u00e7\u00f5es Mobile",
-            "description": [
-                "Desenvolvimento de aplicativos h\u00edbridos e nativos.",
-                "Integra\u00e7\u00e3o com sistemas backend e APIs.",
-                "Publica\u00e7\u00e3o e manuten\u00e7\u00e3o de apps em lojas (App Store e Google Play)."
-            ]
-        },
-        {
-            "name": "UI/UX Design",
-            "description": [
-                "Design de interfaces de usu\u00e1rio intuitivas.",
-                "Cria\u00e7\u00e3o de prot\u00f3tipos e wireframes.",
-                "Testes de usabilidade e melhorias de experi\u00eancia do usu\u00e1rio."
-            ]
-        },
-        {
-            "name": "Otimiza\u00e7\u00e3o para Motores de Busca (SEO)",
-            "description": [
-                "An\u00e1lise e otimiza\u00e7\u00e3o de SEO on-page.",
-                "Estrat\u00e9gias de link building e SEO off-page.",
-                "Monitoramento e relat\u00f3rios de performance de SEO."
-            ]
-        },
-        {
-            "name": "Desenvolvimento de Sistemas CMS (Content Management System)",
-            "description": [
-                "Implementa\u00e7\u00e3o de sistemas de gest\u00e3o de conte\u00fado como WordPress, Joomla e Drupal.",
-                "Customiza\u00e7\u00e3o e desenvolvimento de plugins e temas.",
-                "Treinamento para uso de CMS."
-            ]
-        },
-        {
-            "name": "Integra\u00e7\u00e3o de Terceiros e API",
-            "description": [
-                "Integra\u00e7\u00e3o de servi\u00e7os de terceiros (ex.: sistemas de pagamento, CRMs).",
-                "Desenvolvimento de APIs RESTful e GraphQL.",
-                "Conex\u00e3o com servi\u00e7os de cloud e plataformas SaaS."
-            ]
-        },
-        {
-            "name": "Desenvolvimento Front-end",
-            "description": [
-                "Cria\u00e7\u00e3o de interfaces ricas e interativas.",
-                "Utiliza\u00e7\u00e3o de frameworks modernos como React, Angular e Vue.js.",
-                "Otimiza\u00e7\u00e3o de performance e acessibilidade."
-            ]
-        },
-        {
-            "name": "Desenvolvimento Back-end",
-            "description": [
-                "Cria\u00e7\u00e3o de sistemas robustos e escal\u00e1veis.",
-                "Utiliza\u00e7\u00e3o de linguagens e frameworks como Node.js, Python, Ruby on Rails.",
-                "Gerenciamento de bancos de dados SQL e NoSQL."
-            ]
-        },
-        {
-            "name": "Web Hosting e Manuten\u00e7\u00e3o",
-            "description": [
-                "Hospedagem de websites com alta disponibilidade.",
-                "Servi\u00e7os de manuten\u00e7\u00e3o e suporte cont\u00ednuo.",
-                "Monitoramento e backups regulares."
-            ]
-        },
-        {
-            "name": "Consultoria em Desenvolvimento Web",
-            "description": [
-                "An\u00e1lise de requisitos e defini\u00e7\u00e3o de escopo.",
-                "Planejamento de arquitetura de sistemas.",
-                "Melhoria de processos e pr\u00e1ticas de desenvolvimento."
-            ]
-        }
-    ]
+  "services": [
+    {
+      "name": "Desenvolvimento de Websites",
+      "description": [
+        "Cria\u00e7\u00e3o de websites personalizados.",
+        "Desenvolvimento de sites responsivos e mobile-friendly.",
+        "Manuten\u00e7\u00e3o e atualiza\u00e7\u00e3o de websites existentes."
+      ]
+    },
+    {
+      "name": "Desenvolvimento de E-commerce",
+      "description": [
+        "Cria\u00e7\u00e3o de lojas online.",
+        "Integra\u00e7\u00e3o com sistemas de pagamento.",
+        "Desenvolvimento de funcionalidades customizadas para e-commerce."
+      ]
+    },
+    {
+      "name": "Desenvolvimento de Aplica\u00e7\u00f5es Web",
+      "description": [
+        "Cria\u00e7\u00e3o de aplica\u00e7\u00f5es web sob medida.",
+        "Desenvolvimento de dashboards e sistemas de gest\u00e3o.",
+        "Implementa\u00e7\u00e3o de APIs e servi\u00e7os web."
+      ]
+    },
+    {
+      "name": "Desenvolvimento de Aplica\u00e7\u00f5es Mobile",
+      "description": [
+        "Desenvolvimento de aplicativos h\u00edbridos e nativos.",
+        "Integra\u00e7\u00e3o com sistemas backend e APIs.",
+        "Publica\u00e7\u00e3o e manuten\u00e7\u00e3o de apps em lojas (App Store e Google Play)."
+      ]
+    },
+    {
+      "name": "UI/UX Design",
+      "description": [
+        "Design de interfaces de usu\u00e1rio intuitivas.",
+        "Cria\u00e7\u00e3o de prot\u00f3tipos e wireframes.",
+        "Testes de usabilidade e melhorias de experi\u00eancia do usu\u00e1rio."
+      ]
+    },
+    {
+      "name": "Otimiza\u00e7\u00e3o para Motores de Busca (SEO)",
+      "description": [
+        "An\u00e1lise e otimiza\u00e7\u00e3o de SEO on-page.",
+        "Estrat\u00e9gias de link building e SEO off-page.",
+        "Monitoramento e relat\u00f3rios de performance de SEO."
+      ]
+    },
+    {
+      "name": "Desenvolvimento de Sistemas CMS (Content Management System)",
+      "description": [
+        "Implementa\u00e7\u00e3o de sistemas de gest\u00e3o de conte\u00fado como WordPress, Joomla e Drupal.",
+        "Customiza\u00e7\u00e3o e desenvolvimento de plugins e temas.",
+        "Treinamento para uso de CMS."
+      ]
+    },
+    {
+      "name": "Integra\u00e7\u00e3o de Terceiros e API",
+      "description": [
+        "Integra\u00e7\u00e3o de servi\u00e7os de terceiros (ex.: sistemas de pagamento, CRMs).",
+        "Desenvolvimento de APIs RESTful e GraphQL.",
+        "Conex\u00e3o com servi\u00e7os de cloud e plataformas SaaS."
+      ]
+    },
+    {
+      "name": "Desenvolvimento Front-end",
+      "description": [
+        "Cria\u00e7\u00e3o de interfaces ricas e interativas.",
+        "Utiliza\u00e7\u00e3o de frameworks modernos como React, Angular e Vue.js.",
+        "Otimiza\u00e7\u00e3o de performance e acessibilidade."
+      ]
+    },
+    {
+      "name": "Desenvolvimento Back-end",
+      "description": [
+        "Cria\u00e7\u00e3o de sistemas robustos e escal\u00e1veis.",
+        "Utiliza\u00e7\u00e3o de linguagens e frameworks como Node.js, Python, Ruby on Rails.",
+        "Gerenciamento de bancos de dados SQL e NoSQL."
+      ]
+    },
+    {
+      "name": "Web Hosting e Manuten\u00e7\u00e3o",
+      "description": [
+        "Hospedagem de websites com alta disponibilidade.",
+        "Servi\u00e7os de manuten\u00e7\u00e3o e suporte cont\u00ednuo.",
+        "Monitoramento e backups regulares."
+      ]
+    },
+    {
+      "name": "Consultoria em Desenvolvimento Web",
+      "description": [
+        "An\u00e1lise de requisitos e defini\u00e7\u00e3o de escopo.",
+        "Planejamento de arquitetura de sistemas.",
+        "Melhoria de processos e pr\u00e1ticas de desenvolvimento."
+      ]
+    }
+  ]
 }

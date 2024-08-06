@@ -1,6 +1,6 @@
-'use client'
-import Hero from '@/components/Hero'
-import ServiceSection from '@/components/services/ServiceSection'
+"use client"
+import Hero from "@/components/Hero"
+import ServiceSection from "@/components/services/ServiceSection"
 
 export default function HomePage() {
   return (

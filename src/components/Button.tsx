@@ -1,4 +1,4 @@
-type ButtonVariant = 'primary' | 'secondary' | 'success' | 'danger'
+type ButtonVariant = "primary" | "secondary" | "success" | "danger"
 
 type ButtonProps = {
   label: string
@@ -7,18 +7,18 @@ type ButtonProps = {
 }
 
 const buttonStyles: { [key in ButtonVariant]: string } = {
-  primary: 'bg-ascend hover:bg-blue-700 text-white font-bold py-2 px-4 rounded',
+  primary: "bg-ascend hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
   secondary:
-    'bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded',
+    "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded",
   success:
-    'bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded',
-  danger: 'bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded',
+    "bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded",
+  danger: "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
 }
 
 const ButtonComponent: React.FC<ButtonProps> = ({
   label,
   onClick,
-  variant = 'primary',
+  variant = "primary",
 }) => {
   return (
     <button

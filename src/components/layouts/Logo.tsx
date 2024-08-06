@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image"
+import Link from "next/link"
 
-const logoImg = '/logo_reginaldo_gomes.svg'
-const logoIcon = '/logo_icon_reginado_gomes.svg'
+const logoImg = "/logo_reginaldo_gomes.svg"
+const logoIcon = "/logo_icon_reginado_gomes.svg"
 
 export const Logo = () => {
   return (

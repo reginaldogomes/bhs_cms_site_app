@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import ContactForm from '@/components/form/ContactForm'
+import ContactForm from "@/components/form/ContactForm"
 
 const Contact: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
-import './globals.css'
-import React, { ReactNode } from 'react'
-import Header from '@/components/layouts/Header'
-import Footer from '@/components/layouts/Footer'
+import "./globals.css"
+import React, { ReactNode } from "react"
+import Header from "@/components/layouts/Header"
+import Footer from "@/components/layouts/Footer"
 
 type LayoutProps = {
   children: ReactNode
@@ -15,7 +15,7 @@ export default function Layout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{process.env.TITLE_SITE}</title>
       </head>
-      <body className="bg-primary-500 bg-[url('/bg.svg')] bg-cover bg-no-repeat bg-fixed text-primary-100 font-nunito antialiased">
+      <body className="bg-primary-500 bg-[url('/bg.svg')] bg-cover bg-fixed bg-no-repeat font-nunito text-primary-100 antialiased">
         <Header />
         <main>{children}</main>
         <Footer />

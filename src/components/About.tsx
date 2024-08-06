@@ -1,7 +1,7 @@
-import React from 'react'
-import Section from '@/components/layouts/Section'
+import React from "react"
+import Section from "@/components/layouts/Section"
 
-import professionalSummary from '@/data/professionalSummary'
+import professionalSummary from "@/data/professionalSummary"
 
 const About: React.FC = () => {
   return (

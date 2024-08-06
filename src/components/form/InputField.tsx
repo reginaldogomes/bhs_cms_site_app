@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { useFormContext } from 'react-hook-form'
+import { useFormContext } from "react-hook-form"
 
 interface InputFieldProps {
   name: string
@@ -12,7 +12,7 @@ interface InputFieldProps {
 const InputField: React.FC<InputFieldProps> = ({
   name,
   label,
-  type = 'text',
+  type = "text",
   required = false,
 }) => {
   const {
@@ -24,7 +24,7 @@ const InputField: React.FC<InputFieldProps> = ({
     <div className="mb-4">
       <label
         htmlFor={name}
-        className="block text-gray-700 text-sm font-bold mb-2"
+        className="text-gray-700 mb-2 block text-sm font-bold"
       >
         {label}
       </label>
@@ -32,7 +32,7 @@ const InputField: React.FC<InputFieldProps> = ({
         id={name}
         type={type}
         {...register(name, { required })}
-        className={`shadow appearance-none border ${errors[name] ? 'border-red-500' : 'border-gray-300'} rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+        className={`appearance-none border shadow ${errors[name] ? "border-red-500" : "border-gray-300"} text-gray-700 focus:shadow-outline w-full rounded px-3 py-2 leading-tight focus:outline-none`}
       />
       {errors[name] && (
         <p className="text-red-500 text-xs italic">{label} is required.</p>
