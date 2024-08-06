@@ -1,5 +1,7 @@
 import Skills from '@/components/Skills'
 
+import professionalSummary from '@/data/professionalSummary'
+
 const about = {
   title: 'Sobre Mim',
   description:
@@ -8,6 +10,7 @@ const about = {
 
 export default function About() {
   return (
+    
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold">{about.title}</h1>
       <p className="text-2xl">{about.description}</p>

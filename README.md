@@ -1,7 +1,3 @@
-Claro! Aqui está um exemplo de README bem profissional para o projeto de blog completo usando Next.js, TypeScript, Prisma, PostgreSQL, Docker e Docker Compose:
-
----
-
 # BHS CMS SITE APP
 
 Este é um projeto de site completo desenvolvido com Next.js, TypeScript, Prisma, PostgreSQL, Docker e Docker Compose. O objetivo deste projeto é fornecer uma aplicação web moderna para criação, visualização e gerenciamento de posts em um blog.

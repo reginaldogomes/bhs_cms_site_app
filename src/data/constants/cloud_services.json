@@ -1,0 +1,92 @@
+{
+    "services": [
+        {
+            "name": "Consultoria em Cloud",
+            "description": [
+                "Avalia\u00e7\u00e3o e planejamento de migra\u00e7\u00e3o para a cloud.",
+                "An\u00e1lise de custo-benef\u00edcio e ROI (Retorno sobre Investimento).",
+                "Desenvolvimento de estrat\u00e9gias de cloud h\u00edbrida ou multi-cloud."
+            ]
+        },
+        {
+            "name": "Migra\u00e7\u00e3o para a Cloud",
+            "description": [
+                "Migra\u00e7\u00e3o de infraestrutura on-premise para a cloud.",
+                "Migra\u00e7\u00e3o de aplica\u00e7\u00f5es e dados.",
+                "Migra\u00e7\u00e3o de ambientes de desenvolvimento e testes."
+            ]
+        },
+        {
+            "name": "Gerenciamento e Monitoramento de Cloud",
+            "description": [
+                "Monitoramento de performance e disponibilidade.",
+                "Gerenciamento de custos e otimiza\u00e7\u00e3o de recursos.",
+                "Automa\u00e7\u00e3o de tarefas rotineiras."
+            ]
+        },
+        {
+            "name": "Seguran\u00e7a na Cloud",
+            "description": [
+                "Implementa\u00e7\u00e3o de medidas de seguran\u00e7a e conformidade.",
+                "Gest\u00e3o de identidades e acessos (IAM).",
+                "Monitoramento e resposta a incidentes de seguran\u00e7a."
+            ]
+        },
+        {
+            "name": "Backup e Recupera\u00e7\u00e3o de Desastres",
+            "description": [
+                "Solu\u00e7\u00f5es de backup automatizado.",
+                "Planos de recupera\u00e7\u00e3o de desastres (DR).",
+                "Testes regulares de recupera\u00e7\u00e3o."
+            ]
+        },
+        {
+            "name": "Desenvolvimento e Hospedagem de Aplica\u00e7\u00f5es",
+            "description": [
+                "Desenvolvimento de aplica\u00e7\u00f5es nativas de cloud.",
+                "Hospedagem de websites e aplica\u00e7\u00f5es web.",
+                "Solu\u00e7\u00f5es serverless (e.g., AWS Lambda, Azure Functions)."
+            ]
+        },
+        {
+            "name": "Data Analytics e Big Data",
+            "description": [
+                "Implementa\u00e7\u00e3o de solu\u00e7\u00f5es de Big Data.",
+                "Configura\u00e7\u00e3o de data lakes e data warehouses.",
+                "An\u00e1lise e visualiza\u00e7\u00e3o de dados."
+            ]
+        },
+        {
+            "name": "Intelig\u00eancia Artificial e Machine Learning",
+            "description": [
+                "Implementa\u00e7\u00e3o de modelos de Machine Learning.",
+                "Servi\u00e7os de IA como an\u00e1lise preditiva e reconhecimento de padr\u00f5es.",
+                "Integra\u00e7\u00e3o de IA em aplica\u00e7\u00f5es empresariais."
+            ]
+        },
+        {
+            "name": "DevOps e Automa\u00e7\u00e3o",
+            "description": [
+                "Implementa\u00e7\u00e3o de pipelines CI/CD.",
+                "Automa\u00e7\u00e3o de infraestrutura com ferramentas como Terraform e Ansible.",
+                "Gerenciamento de containers e orquestra\u00e7\u00e3o com Kubernetes."
+            ]
+        },
+        {
+            "name": "Gerenciamento de Banco de Dados",
+            "description": [
+                "Servi\u00e7os gerenciados de banco de dados.",
+                "Otimiza\u00e7\u00e3o de performance e escalabilidade.",
+                "Backup e recupera\u00e7\u00e3o de dados."
+            ]
+        },
+        {
+            "name": "IoT (Internet of Things)",
+            "description": [
+                "Desenvolvimento e integra\u00e7\u00e3o de solu\u00e7\u00f5es IoT.",
+                "Gest\u00e3o de dispositivos IoT na cloud.",
+                "An\u00e1lise de dados de IoT."
+            ]
+        }
+    ]
+}
