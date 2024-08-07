@@ -1,3 +1,5 @@
+import Container from "@/components/layouts/Container";
+
 export default function page() {
-  return <div>Articles</div>
+  return <Container>Articles</Container>
 }

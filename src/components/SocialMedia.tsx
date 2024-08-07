@@ -17,13 +17,13 @@ type SocialMediaLinks = {
 const socialMediaLinks: SocialMediaLinks = {
   items: [
     {
-      name: "Twitter",
-      link: "https://www.twitter.com",
+      name: "GitHub",
+      link: "https://www.github.com/reginaldogomes",
       icon: <FaGithub />,
     },
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com",
+      link: "https://www.linkedin.com/in/reginaldogomesalves/",
       icon: <FaInstagram />,
     },
     {

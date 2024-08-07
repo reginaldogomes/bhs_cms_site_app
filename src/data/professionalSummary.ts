@@ -25,7 +25,7 @@ export interface ProfessionalSummary {
 
 const professionalSummary: ProfessionalSummary = {
   name: "Reginaldo Gomes",
-  title: "Desenvolvedor Front-end e Especialista em AWS",
+  title: "Analista de Desenvolvimento Web",
   summary:
     "Profissional com experiência em desenvolvimento front-end, especializado em React, Next.js e TypeScript. Experiência em cloud computing com foco em AWS e administração de infraestrutura. Comprometido com a inovação e a transformação digital para empresas.",
   experiences: [
