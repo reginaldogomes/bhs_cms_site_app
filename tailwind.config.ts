@@ -1,74 +1,80 @@
 import type { Config } from "tailwindcss"
 
-const config: Config = {
+const config = {
+  darkMode: ["class"],
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       keyframes: {
-        slideUp: {
-          "0%": { transform: "translateY(100%)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
-        slideUp: "slideUp 0.2s ease-out",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/bg.jpg')",
-      },
-      fontFamily: {
-        nunito: ["Nunito", "sans-serif"],
-      },
-      maxWidth: {
-        "1280": "1280px",
-      },
-    },
-    colors: {
-      primary: {
-        "50": "#E0EBF5",
-        "100": "#BDD4EA",
-        "200": "#7CA8D5",
-        "300": "#3E80C1",
-        "400": "#29547F",
-        "500": "#14293E",
-        "600": "#102132",
-        "700": "#0C1A27",
-        "800": "#070F17",
-        "900": "#04080C",
-        "950": "#020508",
-      },
-      secondary: {
-        "50": "#DCF3FF",
-        "100": "#B9E7FE",
-        "200": "#72CFFD",
-        "300": "#2CB7FC",
-        "400": "#0395DD",
-        "500": "#026495",
-        "600": "#025179",
-        "700": "#013D5B",
-        "800": "#01293C",
-        "900": "#00141E",
-        "950": "#000A0F",
-      },
-      accent: {
-        "50": "#E8F5FC",
-        "100": "#D2EBF9",
-        "200": "#A5D6F3",
-        "300": "#77C2EE",
-        "400": "#4AAEE8",
-        "500": "#1D99E1",
-        "600": "#177BB5",
-        "700": "#115C88",
-        "800": "#0C3D5A",
-        "900": "#061F2D",
-        "950": "#030F17",
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [],
-}
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
 export default config

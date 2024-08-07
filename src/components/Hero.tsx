@@ -1,5 +1,5 @@
 import Section from "@/components/layouts/Section"
-import ButtonComponent from "./Button"
+import { Button } from "@/components/ui/button"
 
 const dataResume = {
   name: "Reginaldo Gomes",
@@ -11,20 +11,17 @@ const Hero: React.FC = () => {
   const handleClick = () => {
     alert("Botão clicado!")
   }
+
   return (
     <Section
       title={dataResume.name}
-      className="text-white mx-auto max-w-1280 text-center"
+      className="max-w-1280·mx-auto·text-center·text-white"
     >
       <h1>{dataResume.slogan}</h1>
 
       <p className="text-xl">{dataResume.bio}</p>
 
-      <ButtonComponent
-        label="Primário"
-        onClick={handleClick}
-        variant="primary"
-      />
+      <Button onClick={handleClick}>Click me</Button>
     </Section>
   )
 }

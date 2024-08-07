@@ -31,9 +31,9 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
 }) => {
   return (
     <div className="container mx-auto p-6">
-      <div className="bg-white rounded-lg p-6 shadow-md">
+      <div className="rounded-lg bg-white p-6 shadow-md">
         <h1 className="mb-2 text-2xl font-bold">{name}</h1>
-        <h2 className="text-gray-700 mb-4 text-xl">{title}</h2>
+        <h2 className="mb-4 text-xl text-gray-700">{title}</h2>
         <p className="mb-6">{summary}</p>
 
         <div>

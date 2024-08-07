@@ -19,7 +19,7 @@ const ContactForm: React.FC = () => {
     <FormProvider {...methods}>
       <form
         onSubmit={methods.handleSubmit(onSubmit)}
-        className="bg-white mx-auto mt-8 w-full max-w-lg rounded-lg p-8 shadow-md"
+        className="mx-auto mt-8 w-full max-w-lg rounded-lg bg-white p-8 shadow-md"
       >
         <InputField name="name" label="Name" required />
         <InputField name="email" label="Email" type="email" required />
@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="hover:bg-blue-700 text-white focus:shadow-outline rounded bg-accent-500 px-4 py-2 font-bold focus:outline-none"
+            className="focus:shadow-outline bg-accent-500 rounded px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none"
           >
             Submit
           </button>

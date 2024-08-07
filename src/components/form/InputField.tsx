@@ -24,7 +24,7 @@ const InputField: React.FC<InputFieldProps> = ({
     <div className="mb-4">
       <label
         htmlFor={name}
-        className="text-gray-700 mb-2 block text-sm font-bold"
+        className="mb-2 block text-sm font-bold text-gray-700"
       >
         {label}
       </label>
@@ -32,10 +32,10 @@ const InputField: React.FC<InputFieldProps> = ({
         id={name}
         type={type}
         {...register(name, { required })}
-        className={`appearance-none border shadow ${errors[name] ? "border-red-500" : "border-gray-300"} text-gray-700 focus:shadow-outline w-full rounded px-3 py-2 leading-tight focus:outline-none`}
+        className={`appearance-none border shadow ${errors[name] ? "border-red-500" : "border-gray-300"} focus:shadow-outline w-full rounded px-3 py-2 leading-tight text-gray-700 focus:outline-none`}
       />
       {errors[name] && (
-        <p className="text-red-500 text-xs italic">{label} is required.</p>
+        <p className="text-xs italic text-red-500">{label} is required.</p>
       )}
     </div>
   )

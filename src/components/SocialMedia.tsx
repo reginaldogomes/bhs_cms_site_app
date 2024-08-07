@@ -36,7 +36,7 @@ const socialMediaLinks: SocialMediaLinks = {
 
 const SocialMediaComponent: React.FC = () => {
   return (
-    <div className="bg-gray-200 flex justify-center space-x-4 p-4">
+    <div className="flex justify-center space-x-4 bg-gray-200 p-4">
       {socialMediaLinks.items.map((item, index) => (
         <a
           key={index}

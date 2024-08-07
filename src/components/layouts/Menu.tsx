@@ -28,7 +28,7 @@ const ResponsiveMenu: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-white hover:text-gray-300 text-2xl`}
+                className={`text-2xl text-white hover:text-gray-300`}
               >
                 {item.name}
               </Link>
@@ -36,7 +36,7 @@ const ResponsiveMenu: React.FC = () => {
           </div>
           <button
             onClick={toggleMenu}
-            className="text-white focus:ring-gray-500 z-10 focus:outline-none focus:ring-2 sm:hidden"
+            className="z-10 text-white focus:outline-none focus:ring-2 focus:ring-gray-500 sm:hidden"
           >
             {isOpen ? (
               <AiOutlineClose size={48} />
@@ -48,14 +48,14 @@ const ResponsiveMenu: React.FC = () => {
       </nav>
 
       {isOpen && (
-        <div className="bg-opacity-98 -z-9 fixed inset-0 flex animate-slideUp flex-col items-center justify-center bg-accent-500 sm:hidden">
+        <div className="bg-opacity-98 -z-9 animate-slideUp bg-accent-500 fixed inset-0 flex flex-col items-center justify-center sm:hidden">
           <ul className="space-y-6">
             {menuItems.map((item) => (
               <li key={item.href} className="text-center">
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-gray-300 text-3xl"
+                  className="text-3xl text-white hover:text-gray-300"
                 >
                   {item.name}
                 </Link>

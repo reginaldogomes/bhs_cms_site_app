@@ -43,7 +43,7 @@ const Skills: React.FC = () => {
   return (
     <Section
       title="Bem-vindo ao meu site!"
-      className="bg-blue-600 text-white text-center"
+      className="bg-blue-600 text-center text-white"
     >
       <h1 className="mb-6 text-3xl font-bold">Habilidades</h1>
       <div className="mb-6">

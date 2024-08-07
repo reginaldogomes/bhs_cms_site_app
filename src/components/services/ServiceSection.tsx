@@ -7,13 +7,13 @@ const services = [
     title: "Consultoria em Cloud",
     description:
       "Ajudamos sua empresa a migrar para a nuvem de forma eficiente e segura.",
-    icon: <FaCloud className="text-blue-500 h-8 w-8" />,
+    icon: <FaCloud className="h-8 w-8 text-blue-500" />,
   },
   {
     title: "Desenvolvimento Web",
     description:
       "Oferecemos soluções de gestão de infraestrutura para garantir alta disponibilidade e performance.",
-    icon: <FaCog className="text-blue-500 h-8 w-8" />,
+    icon: <FaCog className="h-8 w-8 text-blue-500" />,
   },
 ]
 
