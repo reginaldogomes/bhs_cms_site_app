@@ -13,10 +13,12 @@ const about = {
 export default function About() {
   return (
     <Container>
-      <h1 className="text-3xl font-bold">{about.title}</h1>
-      <p className="text-2xl">{about.description}</p>
-      <Skills />
-      <ProfessionalSummary {...professionalSummary} />
+      <Section title="teste">
+        <h1 className="text-3xl font-bold">{about.title}</h1>
+        <p className="text-2xl">{about.description}</p>
+        <Skills />
+        <ProfessionalSummary {...professionalSummary} />
+      </Section>
     </Container>
   )
 }
