@@ -23,8 +23,8 @@ Para executar este projeto localmente, siga os passos abaixo:
 1. Clone o repositório:
 
    ```sh
-   git clone https://github.com/seu-usuario/my-blog.git
-   cd my-blog
+   git clone https://github.com/reginaldogomes/bhs_cms_site_app
+   cd bhs_cms_site_app
    ```
 
 2. Instale as dependências:
