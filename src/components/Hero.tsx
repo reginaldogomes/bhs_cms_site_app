@@ -18,10 +18,8 @@ const Hero: React.FC = () => {
       className="max-w-1280·mx-auto·text-center·text-white"
     >
       <h1>{dataResume.slogan}</h1>
-
       <p className="text-xl">{dataResume.bio}</p>
-
-      <Button onClick={handleClick}>Click me</Button>
+      <Button onClick={handleClick}>Sobre Mim</Button>
     </Section>
   )
 }
