@@ -21,7 +21,7 @@ const ResponsiveMenu: React.FC = () => {
 
   return (
     <>
-      <nav className="bg-gray-800 p-4">
+      <nav className="rounded-2xl bg-gray-800 bg-opacity-20 p-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="hidden space-x-4 sm:flex">
             {menuItems.map((item) => (

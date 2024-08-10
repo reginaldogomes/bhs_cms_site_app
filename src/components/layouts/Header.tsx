@@ -4,8 +4,8 @@ import Menu from "./Menu"
 // src/components/Header.tsx
 export default function Header() {
   return (
-    <header className="w-full">
-      <div className="max-w-1280 sticky mx-auto flex items-center justify-between bg-fixed px-1 py-8">
+    <header className="fixed w-full bg-slate-600 bg-opacity-20 bg-fixed">
+      <div className="container flex items-center justify-between px-1 py-8">
         <Logo />
         <Menu />
       </div>
