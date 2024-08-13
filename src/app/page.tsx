@@ -5,8 +5,10 @@ import ServiceSection from "@/components/services/ServiceSection"
 export default function HomePage() {
   return (
     <>
-      <Hero />
-      <ServiceSection />
+      <div className="container top-10">
+        <Hero />
+        <ServiceSection />
+      </div>
     </>
   )
 }

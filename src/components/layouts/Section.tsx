@@ -14,11 +14,9 @@ const Section: React.FC<SectionProps> = ({
   className = "",
 }) => {
   return (
-    <section id={id} className={`rounded-xl py-20 ${className}`}>
-      <div className="container mx-auto">
-        <h2 className="mb-4 text-4xl font-bold">{title}</h2>
-        {children}
-      </div>
+    <section id={id} className={`rounded-xl py-48 ${className}`}>
+      <h2 className="mb-4 text-4xl font-bold">{title}</h2>
+      {children}
     </section>
   )
 }
